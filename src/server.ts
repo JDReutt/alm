@@ -23,6 +23,12 @@ import * as chalk from "chalk";
 import * as utils from "./common/utils";
 import * as fsu from "./server/utils/fsu";
 
+/**
+ * Load up TypeScript
+ */
+import * as byots  from "byots";
+const ensureImport = byots;
+
 // `Where` to statically serve `what`
 const staticServing = {
     '': path.resolve(__dirname, 'public'),

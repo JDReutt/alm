@@ -19,7 +19,7 @@ var config = {
     module: {
         noParse: [
             /clipboard\.min/,
-            /ntypescript/,
+            /typescript/,
         ],
         loaders: [
             {

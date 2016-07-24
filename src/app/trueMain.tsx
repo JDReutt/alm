@@ -41,8 +41,9 @@ require('hint.css/hint.css');
 // Setup font awesome
 require('font-awesome/css/font-awesome.css');
 
-// Setup ntypescript
-require('ntypescript');
+// Setup typescript
+import _ts = require('byots');
+const ensureImport = _ts;
 
 const afterLoaded = () => {
     // The main app element

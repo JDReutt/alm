@@ -8,6 +8,12 @@ import * as umlDiagram from "./umlDiagram/umlDiagram";
 import * as tsFlow from "./tsFlow/tsFlow";
 import * as liveAnalysis from "./liveAnalysis/liveAnalysis";
 
+/**
+ * Load up TypeScript
+ */
+import * as byots  from "byots";
+const ensureImport = byots;
+
 namespace Worker {
     export const echo: typeof contract.worker.echo = (data) => Promise.resolve(data);
 
